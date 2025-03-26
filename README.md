@@ -1,17 +1,3 @@
-Принято. Я подготовлю полный, готовый к запуску проект аналитической платформы для маркетплейса, включающий:
-
-- SHOP API и CLIENT API (эмуляторы)
-- Полную инфраструктуру Apache Kafka с TLS, ACL, репликацией и зеркалированием
-- Kafka Streams для фильтрации запрещённых товаров
-- Kafka Connect и Elasticsearch Sink Connector
-- Apache Spark и HDFS для аналитики
-- Prometheus + Grafana + Alertmanager для мониторинга
-- Полноценный `docker-compose.yml` и Dockerfile'ы
-- Скрипты на Java и Bash
-- README с инструкцией по запуску и описанием архитектуры
-
-Сообщу, как только всё будет готово.
-
 # Project Structure
 
 ```
