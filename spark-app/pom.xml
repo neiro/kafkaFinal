@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"  
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0  
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  <modelVersion>4.0.0</modelVersion>  
+
+  <groupId>com.marketplace</groupId>  
+  <artifactId>spark-app</artifactId>  
+  <version>1.0.0</version>  
+  <packaging>jar</packaging>  
+
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <spark.version>3.3.2</spark.version>
+  </properties>
+
+  <dependencies>
+    <!-- Spark Core и SQL -->
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-core_2.12</artifactId>
+      <version>${spark.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-sql_2.12</artifactId>
+      <version>${spark.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- Интеграция Spark с Kafka -->
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-sql-kafka-0-10_2.12</artifactId>
+      <version>${spark.version}</version>
+    </dependency>
+    <!-- Jackson для работы с JSON (при необходимости) -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.13.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.36</version>
+      <scope>runtime</scope>
+    </dependency>    
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Компилятор для Java 11 -->
+      <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-compiler-plugin</artifactId>
+         <version>3.8.1</version>
+         <configuration>
+           <source>11</source>
+           <target>11</target>
+         </configuration>
+      </plugin>
+      <!-- Создание "fat-jar" для Spark-приложения -->
+      <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-shade-plugin</artifactId>
+         <version>3.2.4</version>
+         <executions>
+            <execution>
+               <phase>package</phase>
+               <goals>
+                  <goal>shade</goal>
+               </goals>
+               <configuration>
+                 <transformers>
+                   <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                     <mainClass>com.marketplace.spark.AnalyticsApp</mainClass>
+                   </transformer>
+                 </transformers>
+               </configuration>
+            </execution>
+         </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

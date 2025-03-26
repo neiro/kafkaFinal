@@ -1,0 +1,24 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'kafka_brokers'
+    static_configs:
+      - targets: ['kafka1:7071', 'kafka2:7071', 'kafka3:7071']
+  - job_name: 'kafka_connect'
+    static_configs:
+      - targets: ['kafka-connect:8083']
+  - job_name: 'zookeeper'
+    static_configs:
+      - targets: ['zookeeper1:2181','zookeeper2:2181','zookeeper3:2181']
+    metrics_path: /metrics
+    scheme: http
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ['alertmanager:9093']
+
+rule_files:
+  - /etc/prometheus/alerts.yml

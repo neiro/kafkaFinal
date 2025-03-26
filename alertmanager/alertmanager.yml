@@ -1,0 +1,22 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  group_by: ['alertname']
+  receiver: 'telegram'
+  repeat_interval: 30m
+
+receivers:
+- name: 'telegram'
+  webhook_configs:
+  - url: 'https://api.telegram.org/bot<YOUR_BOT_TOKEN>/sendMessage?chat_id=<YOUR_CHAT_ID>'
+    send_resolved: true
+
+# Optionally, another receiver for email alerts:
+- name: 'email'
+  email_configs:
+  - to: 'admin@example.com'
+    from: 'kafka-alerts@example.com'
+    smarthost: 'smtp.example.com:587'
+    auth_username: 'user'
+    auth_password: 'pass'

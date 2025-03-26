@@ -1,0 +1,33 @@
+{"id": "p1001", "name": "Smartphone XYZ", "category": "Electronics", "price": 299.99, "description": "Новейший смартфон XYZ с отличной камерой"}
+{"id": "p1002", "name": "Laptop Pro 15", "category": "Computers", "price": 899.00, "description": "Мощный ноутбук для работы и игр."}
+{"id": "p1003", "name": "Wine Red 2015", "category": "Alcohol", "price": 19.99, "description": "Красное вино урожая 2015 года."}
+{"id": "p1004", "name": "4K Телевизор LG", "category": "Electronics", "price": 599.99, "description": "Ультра HD телевизор с поддержкой HDR10 и SmartTV."}
+{"id": "p1005", "name": "Наушники SoundMax", "category": "Electronics", "price": 49.90, "description": "Беспроводные наушники с шумоподавлением."}
+{"id": "p1006", "name": "Кофеварка EspressoMini", "category": "Home Appliances", "price": 89.00, "description": "Компактная кофеварка для дома и офиса."}
+{"id": "p1007", "name": "Смарт-часы FitBand 2", "category": "Wearables", "price": 129.99, "description": "Следит за пульсом, шагами и сном."}
+{"id": "p1008", "name": "Микроволновка Samsung", "category": "Home Appliances", "price": 109.50, "description": "Мощная микроволновая печь с грилем."}
+{"id": "p1009", "name": "Игровая мышь XStrike", "category": "Computers", "price": 35.00, "description": "Прецизионная мышь с настраиваемыми кнопками."}
+{"id": "p1010", "name": "Молоко 2.5%", "category": "Groceries", "price": 1.25, "description": "Натуральное пастеризованное молоко, 1 л."}
+{"id": "p1011", "name": "Шоколад Milka", "category": "Groceries", "price": 2.49, "description": "Молочный шоколад с фундуком."}
+{"id": "p1012", "name": "Смартфон Nova 10", "category": "Electronics", "price": 359.00, "description": "Производительный смартфон с AMOLED дисплеем."}
+{"id": "p1013", "name": "Спортивный костюм Nike", "category": "Clothing", "price": 89.90, "description": "Удобный костюм для тренировок и прогулок."}
+{"id": "p1014", "name": "Тостер Philips", "category": "Home Appliances", "price": 29.90, "description": "Тостер на 2 ломтика с регулировкой поджарки."}
+{"id": "p1015", "name": "Сыр Пармезан", "category": "Groceries", "price": 4.99, "description": "Итальянский твердый сыр, 200 г."}
+{"id": "p1016", "name": "Ботинки зимние", "category": "Footwear", "price": 119.00, "description": "Теплые кожаные ботинки с мехом."}
+{"id": "p1017", "name": "Power Bank 20000 мАч", "category": "Electronics", "price": 24.50, "description": "Быстрая зарядка, два USB выхода."}
+{"id": "p1018", "name": "Пылесос Dyson V8", "category": "Home Appliances", "price": 299.00, "description": "Беспроводной пылесос с высокой мощностью."}
+{"id": "p1019", "name": "Шампунь Herbal Fresh", "category": "Personal Care", "price": 5.30, "description": "Шампунь с экстрактами трав, 400 мл."}
+{"id": "p1020", "name": "Кроссовки Puma", "category": "Footwear", "price": 74.99, "description": "Легкие кроссовки для повседневной носки."}
+{"id": "p1021", "name": "Книга «Мастер и Маргарита»", "category": "Books", "price": 12.00, "description": "Классика русской литературы, Булгаков."}
+{"id": "p1022", "name": "USB флешка 64ГБ", "category": "Computers", "price": 9.99, "description": "Высокоскоростная флешка USB 3.0."}
+{"id": "p1023", "name": "Клавиатура Logitech", "category": "Computers", "price": 45.00, "description": "Механическая клавиатура с подсветкой."}
+{"id": "p1024", "name": "Блендер Braun", "category": "Home Appliances", "price": 59.90, "description": "Погружной блендер с насадками."}
+{"id": "p1025", "name": "Печенье Oreo", "category": "Groceries", "price": 1.89, "description": "Песочное печенье с кремом."}
+{"id": "p1026", "name": "Портативная колонка JBL", "category": "Electronics", "price": 69.00, "description": "Громкий и водостойкий звук."}
+{"id": "p1027", "name": "Очки виртуальной реальности VRX", "category": "Electronics", "price": 199.00, "description": "Погрузитесь в мир виртуальной реальности."}
+{"id": "p1028", "name": "Термос 1 литр", "category": "Camping", "price": 14.50, "description": "Держит температуру до 12 часов."}
+{"id": "p1029", "name": "Мыло Dove", "category": "Personal Care", "price": 1.20, "description": "Крем-мыло для чувствительной кожи."}
+{"id": "p1030", "name": "Чай Earl Grey", "category": "Groceries", "price": 3.40, "description": "Чёрный чай с бергамотом, 25 пак."}
+{"id": "p1031", "name": "Футболка Basic", "category": "Clothing", "price": 9.90, "description": "100% хлопок, универсальный крой."}
+{"id": "p1032", "name": "Игровая консоль GameBox X", "category": "Electronics", "price": 399.00, "description": "Современная игровая система с Wi-Fi."}
+{"id": "p1033", "name": "Коврик для мыши XL", "category": "Computers", "price": 12.75, "description": "Большой коврик с резиновым основанием."}

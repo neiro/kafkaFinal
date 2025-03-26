@@ -1,0 +1,11 @@
+groups:
+- name: KafkaAlerts
+  rules:
+  - alert: KafkaBrokerDown
+    expr: up{job="kafka_brokers"} == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "All Kafka brokers are down"
+      description: "Prometheus has detected that no Kafka brokers are up for over 1 minute."

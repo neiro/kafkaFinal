@@ -1,0 +1,17 @@
+# Используем официальный минимальный образ OpenJDK 11 с JRE
+FROM openjdk:11-jre-slim
+
+# Устанавливаем OpenSSL для работы с сертификатами
+RUN apt-get update && apt-get install -y openssl && rm -rf /var/lib/apt/lists/*
+
+# Устанавливаем рабочую директорию внутри контейнера
+WORKDIR /app
+
+# Копируем скрипт генерации сертификатов в контейнер
+COPY generate-certs.sh .
+
+# Делаем скрипт исполняемым
+RUN chmod +x generate-certs.sh
+
+# Устанавливаем точку входа для контейнера — запускаем скрипт генерации сертификатов
+ENTRYPOINT ["./generate-certs.sh"]
